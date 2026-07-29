@@ -164,8 +164,9 @@ body:hover #hud{opacity:1}
 /* ajustes finos solicitados */
 section[data-name="Origem"] .col{transform:translateY(-34px)}
 section[data-name="A Tese"] .pad{transform:translateY(-42px)}
-section[data-name="A Fórmula"] .fbox.res .t{margin-bottom:0}
-section[data-name="A Fórmula"] .fbox.res .b{display:block;transform:translateY(-20px)}
+section[data-name="A Fórmula"] .fbox.res{display:flex;flex-direction:column;justify-content:center;gap:6px;min-height:160px}
+section[data-name="A Fórmula"] .fbox.res .t{margin-bottom:0;letter-spacing:.34em;line-height:1;color:rgba(234,238,246,.82)}
+section[data-name="A Fórmula"] .fbox.res .b{display:block;transform:none;line-height:1.02}
 section[data-name="Demanda Qualificada"] .pad{transform:translateY(-42px)}
 section[data-name="Demanda Qualificada"] .kicker,section[data-name="Demanda Qualificada"] .title{text-align:center}
 section[data-name="Demanda Qualificada"] .row{justify-content:center;text-align:center}

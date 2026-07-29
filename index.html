@@ -301,6 +301,24 @@ section[data-name="IA em Ação"] h1{font-size:66px;line-height:1.02;max-width:9
 .bgrid.seven{grid-template-columns:repeat(4,1fr)}
 .bgrid.seven .ben:nth-child(5){grid-column:1/2}
 
+/* pipeline CRM — slide entre benefícios e IA */
+.crm-pipeline-wrap{display:flex;flex-direction:column;justify-content:center;flex:1;min-height:0}
+.crm-pipe-sub{margin-top:10px;max-width:780px;color:var(--muted);font-size:20px;line-height:1.42}
+.crm-pipeline{position:relative;display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:34px;align-items:stretch}
+.crm-pipeline::before{content:"";position:absolute;left:6%;right:6%;top:50%;height:2px;background:linear-gradient(90deg,transparent,var(--gold),var(--cyan),transparent);opacity:.5;z-index:0}
+.pipe-stage{position:relative;z-index:1;min-height:190px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(165deg,rgba(255,255,255,.07),rgba(255,255,255,.018));padding:20px 16px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 24px 60px rgba(0,0,0,.28);overflow:hidden}
+.pipe-stage::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:linear-gradient(180deg,var(--gold),var(--cyan));opacity:.75}
+.pipe-stage::after{content:"→";position:absolute;right:-19px;top:50%;transform:translateY(-50%);font-size:30px;font-weight:900;color:var(--gold);z-index:3;text-shadow:0 0 18px rgba(199,159,79,.45)}
+.pipe-stage:last-child::after{display:none}
+.pipe-stage .num{font-size:12px;font-weight:900;letter-spacing:.18em;color:var(--gold);opacity:.9}
+.pipe-stage h3{margin-top:12px;font-size:22px;font-weight:900;line-height:1.05;letter-spacing:-.02em;color:#fff}
+.pipe-stage p{margin-top:12px;color:var(--muted);font-size:13.5px;line-height:1.38;font-weight:600}
+.pipe-stage.win{background:linear-gradient(165deg,rgba(199,159,79,.2),rgba(31,211,218,.07));border-color:rgba(199,159,79,.45)}
+.pipe-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+.pipe-metric{border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(255,255,255,.035);padding:16px 18px}
+.pipe-metric b{display:block;font-size:26px;font-weight:900;color:var(--gold);line-height:1}
+.pipe-metric span{display:block;margin-top:6px;font-size:13px;color:#cbd3ee;font-weight:700;letter-spacing:.02em}
+
 /* advantages slide 18 */
 .adv{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;flex:1;align-content:center}
 .acard{background:linear-gradient(165deg,rgba(255,255,255,.05),rgba(255,255,255,.01));border:1px solid var(--line);border-radius:18px;padding:26px 22px;position:relative;overflow:hidden}
@@ -705,6 +723,30 @@ section[data-name="IA em Ação"] h1{font-size:66px;line-height:1.02;max-width:9
       <div class="ben" data-r="scale" style="--i:6"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 16v-4M12 16V8M16 16v-6"/></svg></div><h4>Análise e Relatórios</h4></div>
       <div class="ben" data-r="scale" style="--i:7"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8"><path d="M12 21s-7-4.4-9-8.5C1.5 9 3.5 5.5 7 5.5c2 0 3.3 1.2 5 3 1.7-1.8 3-3 5-3 3.5 0 5.5 3.5 4 7-2 4.1-9 8.5-9 8.5Z"/></svg></div><h4>Fidelização de Clientes</h4></div>
       <div class="ben" data-r="scale" style="--i:8"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="1.8"><circle cx="6" cy="7" r="2.5"/><circle cx="18" cy="7" r="2.5"/><circle cx="12" cy="17" r="2.5"/><path d="M8 8.5 11 15M16 8.5 13 15"/></svg></div><h4>Integração entre Equipes</h4></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SLIDE 16B — PIPELINE CRM ============ -->
+<section class="slide" data-name="Pipeline de CRM">
+  <div class="pad">
+    <div class="kicker cyan" data-r style="--i:0">CRM na prática</div>
+    <h1 class="title" data-r style="--i:1">Pipeline de <span class="cy">CRM</span></h1>
+    <div class="crm-pipeline-wrap">
+      <p class="crm-pipe-sub" data-r style="--i:2">O CRM organiza cada oportunidade em uma esteira clara: todo lead tem dono, próxima ação e critério para avançar.</p>
+      <div class="crm-pipeline">
+        <div class="pipe-stage" data-r="scale" style="--i:3"><span class="num">01</span><div><h3>Lead</h3><p>Entrada do contato pelo canal de aquisição.</p></div></div>
+        <div class="pipe-stage" data-r="scale" style="--i:4"><span class="num">02</span><div><h3>Qualificação</h3><p>Perfil, interesse, urgência e capacidade de compra.</p></div></div>
+        <div class="pipe-stage" data-r="scale" style="--i:5"><span class="num">03</span><div><h3>Diagnóstico</h3><p>Entendimento do problema e do objetivo do cliente.</p></div></div>
+        <div class="pipe-stage" data-r="scale" style="--i:6"><span class="num">04</span><div><h3>Proposta</h3><p>Oferta certa, valor claro e próximo passo combinado.</p></div></div>
+        <div class="pipe-stage" data-r="scale" style="--i:7"><span class="num">05</span><div><h3>Negociação</h3><p>Objeções, follow-up e decisão com previsibilidade.</p></div></div>
+        <div class="pipe-stage win" data-r="scale" style="--i:8"><span class="num">06</span><div><h3>Fechamento</h3><p>Venda, onboarding e relacionamento no pós-venda.</p></div></div>
+      </div>
+      <div class="pipe-metrics">
+        <div class="pipe-metric" data-r style="--i:9"><b>Visão</b><span>onde cada negócio está</span></div>
+        <div class="pipe-metric" data-r style="--i:10"><b>Ritmo</b><span>qual ação vem agora</span></div>
+        <div class="pipe-metric" data-r style="--i:11"><b>Previsão</b><span>quanto pode fechar</span></div>
+      </div>
     </div>
   </div>
 </section>

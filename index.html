@@ -466,6 +466,141 @@ section[data-name="Pipeline de CRM"] .title{font-size:36px;line-height:1.04;lett
 .panelwin img{width:100%;display:block}
 .panel-cap{text-align:center;margin-top:14px;font-size:14.5px;color:var(--muted)}
 .panel-cap b{color:#cfd6e6;font-weight:600}
+
+/* ===================================================================
+   ENCERRAMENTO — MÉTODO ALAVANCA (absorvido de ALAVANCA_Encerramento_Acronimo.pptx)
+   =================================================================== */
+/* notas do palestrante: ficam no HTML, só aparecem na janela do apresentador (tecla P) */
+aside.notes{display:none}
+.alv-foot{position:absolute;left:90px;bottom:40px;z-index:4;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-2)}
+.alv-q{margin-top:28px;font-size:21px;color:#cfd6ee;font-weight:500}
+.alv-q b{color:var(--gold);font-weight:700}
+.alv-body{flex:1;display:flex;flex-direction:column;justify-content:center;min-height:0;padding-bottom:24px}
+.alv-body > :first-child{margin-top:0}
+
+/* abertura — foto do esforço */
+.alv-hero{position:absolute;right:0;top:0;bottom:0;width:780px;z-index:1;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 34%);mask-image:linear-gradient(90deg,transparent 0,#000 34%)}
+.alv-hero img{width:100%;height:100%;object-fit:cover;object-position:62% 50%;filter:saturate(.9) contrast(1.05)}
+.alv-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(2,7,13,.7),transparent 34%)}
+.alv-open .pad{justify-content:center}
+.alv-open h1.title{font-size:58px;max-width:560px}
+.alv-open .then{margin-top:26px;font-weight:800;font-size:44px;line-height:1.1;letter-spacing:-.02em;color:#fff;max-width:520px}
+.alv-open .sub{margin-top:28px;font-size:19px}
+
+/* frases de impacto (2, 9, 13) */
+.alv-say .pad{justify-content:center}
+.alv-say .pre{font-weight:300;font-size:40px;line-height:1.2;color:#c3cbe6;letter-spacing:-.01em}
+.alv-say .pre s{text-decoration-color:var(--gold);text-decoration-thickness:3px;color:var(--muted)}
+.alv-say .statement{margin-top:34px}
+.alv-say .alv-q{margin-top:40px}
+
+/* Arquimedes */
+.alv-arq .pad{justify-content:center}
+.alv-arq .row{align-items:center;gap:60px;flex:none}
+.alv-arq figure{flex:none;width:600px;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.alv-arq figure img{width:100%;display:block;filter:saturate(.95) contrast(1.04)}
+.alv-arq .eq{font-size:48px;line-height:1.2}
+.alv-arq .eauthor{margin-top:24px}
+.alv-arq .eauthor::before{margin:0 0 16px 0}
+.alv-arq .attr{margin-top:6px;font-size:13px;letter-spacing:.08em;color:var(--muted-2)}
+
+/* diagrama da alavanca (4, 5) */
+.alv-lever{display:block;width:100%;max-width:1100px;margin:6px auto 0;overflow:visible}
+.alv-lever text{font-family:'Inter',system-ui,sans-serif}
+.alv-lever .lab{font-size:15px;font-weight:700;letter-spacing:.22em;fill:#dfe5f3}
+.alv-lever .lab.g{fill:var(--gold)}
+.alv-lever .sm{font-size:17px;font-weight:500;fill:var(--muted)}
+.alv-lever .beam{transform-box:view-box;transform-origin:760px 250px;transform:rotate(3deg);transition:transform 1.6s var(--ease) .9s}
+.active .alv-lever .beam{transform:rotate(-5deg)}
+.alv-cap{text-align:center;margin-top:8px;font-size:22px;color:#cfd6ee}
+.alv-cap b{color:var(--gold);font-weight:700}
+
+/* 1.000 → 100 → 10 */
+.alv-flow{display:flex;align-items:center;justify-content:center;gap:26px}
+.alv-flow .n{text-align:center;min-width:220px}
+.alv-flow .n b{display:block;font-weight:900;font-size:100px;letter-spacing:-.03em;line-height:1;color:#fff;font-variant-numeric:tabular-nums}
+.alv-flow .n span{display:block;margin-top:10px;font-size:14px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.alv-flow .n.g b{background:var(--grad-gold);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.alv-flow .ar{display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--gold);font-size:34px;line-height:1}
+.alv-flow .ar small{font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--muted-2)}
+.alv-pair{display:flex;gap:24px;justify-content:center;margin-top:46px}
+.alv-pair .c{width:480px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 26px}
+.alv-pair .c .t{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.alv-pair .c .b{margin-top:8px;font-weight:800;font-size:30px;letter-spacing:-.01em}
+.alv-pair .c.no{border-top:3px solid #e2483a}
+.alv-pair .c.no .b{color:#cfd6ee}
+.alv-pair .c.yes{border-top:3px solid var(--gold);background:linear-gradient(160deg,var(--gold-soft),rgba(199,159,79,.03));border-color:rgba(199,159,79,.4)}
+.alv-pair .c.yes .b{color:var(--gold)}
+
+/* R$ 100 mil → processo ruim → $ */
+.alv-leak{display:flex;align-items:center;justify-content:center;gap:30px}
+.alv-leak .box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:38px 40px;text-align:center;min-width:280px}
+.alv-leak .box b{display:block;font-weight:900;font-size:60px;letter-spacing:-.02em;line-height:1;color:#fff}
+.alv-leak .box span{display:block;margin-top:10px;font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.alv-leak .box.bad{border-color:rgba(226,72,58,.45);background:linear-gradient(160deg,rgba(226,72,58,.14),rgba(226,72,58,.03))}
+.alv-leak .box.bad b{font-size:34px;line-height:1.15;color:#f1a79f;text-transform:uppercase;letter-spacing:.02em}
+.alv-leak .ar{color:var(--gold);font-size:40px;font-weight:300}
+.alv-leak .out{width:78px;height:78px;border-radius:50%;border:1px dashed rgba(199,159,79,.45);display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:30px;color:var(--gold);opacity:.55}
+.alv-leak + .alv-q{text-align:center;margin-top:60px;font-size:24px}
+
+/* sete elementos — lista vertical */
+.alv-acro .row{align-items:center;gap:70px}
+.alv-acro .col:first-child{flex:1}
+.alv-list{flex:none;width:520px;list-style:none;display:flex;flex-direction:column}
+.alv-list li{display:flex;align-items:center;gap:26px;padding:9px 0;border-bottom:1px solid var(--line-2)}
+.alv-list li:last-child{border-bottom:0}
+.alv-list .l{width:44px;text-align:center;font-style:italic;font-weight:900;font-size:40px;line-height:1;color:var(--gold)}
+.alv-list .w{font-weight:700;font-size:23px;color:#eef1f8;letter-spacing:-.005em}
+
+/* elemento → efeito */
+.alv-map{width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 60px 1fr;row-gap:0}
+.alv-map > div{padding:12px 0;border-bottom:1px solid var(--line-2);display:flex;align-items:center;font-size:23px}
+.alv-map .e{color:var(--muted);font-weight:500}
+.alv-map .a{justify-content:center;color:var(--gold);font-size:22px}
+.alv-map .f{font-weight:800;color:#fff}
+
+/* Arquimedes + TOC + ALAVANCA */
+.alv-trio{display:flex;align-items:stretch;justify-content:center;gap:22px}
+.alv-trio .c{width:320px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px 30px 34px}
+.alv-trio .c .t{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:700;min-height:36px}
+.alv-trio .c .b{margin-top:22px;font-weight:800;font-size:38px;line-height:1.1;letter-spacing:-.015em;color:#fff}
+.alv-trio .c.g{background:linear-gradient(160deg,rgba(199,159,79,.18),rgba(199,159,79,.04));border-color:rgba(199,159,79,.45)}
+.alv-trio .c.g .b{color:var(--gold)}
+.alv-trio .ar{align-self:center;color:var(--gold);font-size:36px;font-weight:300}
+
+/* ciclo de alavancagem */
+.alv-cycle{display:grid;grid-template-columns:1fr 70px 1fr 70px 1fr;grid-template-rows:auto 70px auto;align-items:center}
+.alv-cycle .st{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 28px}
+.alv-cycle .st small{display:block;font-size:13px;font-weight:800;letter-spacing:.14em;color:var(--gold)}
+.alv-cycle .st b{display:block;margin-top:8px;font-size:27px;font-weight:800;letter-spacing:-.01em;color:#fff}
+.alv-cycle .st.g{background:linear-gradient(160deg,rgba(199,159,79,.18),rgba(199,159,79,.04));border-color:rgba(199,159,79,.45)}
+.alv-cycle .st.g b{color:var(--gold)}
+.alv-cycle .ar{text-align:center;color:var(--gold);font-size:30px;font-weight:300;line-height:1}
+.alv-cycle + .alv-q{margin-top:34px}
+
+/* equação */
+.alv-eq .row{gap:26px;flex:none;align-items:stretch}
+.alv-cro{flex:none;width:380px;background:linear-gradient(160deg,rgba(199,159,79,.18),rgba(199,159,79,.04));border:1px solid rgba(199,159,79,.45);border-radius:18px;padding:28px 32px}
+.alv-cro b{display:block;font-style:italic;font-weight:900;font-size:110px;line-height:1;letter-spacing:-.03em;background:var(--grad-gold);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;padding-right:.1em}
+.alv-cro span{display:block;margin-top:10px;font-size:20px;color:#dfe5f3}
+.alv-kpis{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.alv-kpis div{background:var(--card);border:1px solid var(--line);border-radius:14px;display:flex;align-items:center;padding:0 26px;font-weight:700;font-size:24px;color:#eef1f8}
+.alv-kpis div::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--gold);transform:rotate(45deg);margin-right:14px}
+.alv-rev{margin-top:40px}
+.alv-rev .t{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.alv-rev .f{margin-top:12px;display:flex;align-items:center;gap:20px;font-weight:800;font-size:34px;color:#fff}
+.alv-rev .f i{font-style:normal;font-weight:300;color:var(--gold);font-size:32px}
+
+/* fechamento — Método ALAVANCA */
+.alv-close .pad{justify-content:center}
+.alv-close .alv-list.two{width:auto;margin-top:34px;display:grid;grid-auto-flow:column;grid-template-rows:repeat(4,auto);grid-template-columns:repeat(2,440px);column-gap:60px;position:relative;z-index:3}
+.alv-close .alv-list.two li{padding:8px 0}
+.alv-close .alv-list.two .l{font-size:40px;width:44px}
+.alv-close .alv-list.two .w{font-size:24px}
+.alv-close .alv-q{position:relative;z-index:3;margin-top:36px;font-size:26px;font-weight:700;color:#fff}
+.alv-close .alv-q em{font-style:italic;color:var(--gold)}
 </style>
 </head>
 <body>
@@ -647,6 +782,300 @@ section[data-name="Pipeline de CRM"] .title{font-size:36px;line-height:1.04;lett
       <span class="cap c2">"Estamos bem ocupados…"</span>
     </div>
   </div>
+</section>
+
+<!-- ============ ALAVANCA 01 — MAIS FORÇA ============ -->
+<section class="slide alv-open" data-name="Mais Força">
+  <div class="alv-hero" data-r="fade" style="--i:0"><img src="assets/alavanca-esforco.jpg" alt="Homem empurrando uma rocha gigante"></div>
+  <div class="pad">
+    <div class="kicker" data-r style="--i:0">Método ALAVANCA</div>
+    <h1 class="title" data-r style="--i:1">Por que algumas empresas fazem <em>cada vez mais força…</em></h1>
+    <div class="then" data-r style="--i:2">e continuam no mesmo lugar?</div>
+    <div class="sub" data-r style="--i:3">Mais horas. Mais cobrança. E pouco avanço.</div>
+  </div>
+  <aside class="notes"><p>Tempo sugerido: 3 min.</p><p>Abra com silêncio. Pergunte quem aumentou investimento, equipe ou horas e sentiu pouco avanço. Ouça dois exemplos. Mais tráfego, mais vendedores e mais cobrança podem aumentar esforço sem resolver o limite.</p><p>Fala sugerida: Você termina a semana exausto, com a agenda cheia, e ainda sente que a empresa depende de você para tudo? Peça que cada pessoa escolha uma situação real da própria empresa para acompanhar durante a apresentação.</p></aside>
+</section>
+
+<!-- ============ ALAVANCA 02 — ONDE ESTÁ A FORÇA ============ -->
+<section class="slide alv-say" data-name="Onde Está a Força">
+  <div class="pad">
+    <div class="pre" data-r style="--i:0">O problema talvez não seja falta de força.</div>
+    <div class="statement" data-r style="--i:2">Talvez seja <span class="g">onde você está aplicando</span> a força.</div>
+  </div>
+  <aside class="notes"><p>Tempo sugerido: 2 min.</p><p>Faça uma pausa entre as duas frases. Convide o público a lembrar de uma iniciativa com muito esforço e pouco efeito. A provocação é investigar a aplicação dos recursos.</p><p>Fala sugerida: Talvez você já esteja se dedicando muito. Antes de exigir mais de si e da equipe, vale investigar o que está impedindo esse esforço de virar resultado.</p></aside>
+</section>
+
+<!-- ============ ALAVANCA 03 — ARQUIMEDES ============ -->
+<section class="slide alv-arq" data-name="Arquimedes">
+  <div class="pad"><div class="row">
+    <figure data-r="left" style="--i:0"><img src="assets/alavanca-arquimedes.jpg" alt="Interpretação artística de Arquimedes com uma alavanca"></figure>
+    <div class="col">
+      <div class="eq" data-r style="--i:1">“Dê-me um <span class="hl">ponto de apoio</span> e uma <span class="hl">alavanca</span>, e moverei o mundo.”</div>
+      <div class="eauthor" data-r style="--i:2">Arquimedes</div>
+      <div class="attr" data-r style="--i:3">Frase tradicionalmente atribuída</div>
+    </div>
+  </div></div>
+  <aside class="notes"><p>Tempo sugerido: 2 min.</p><p>Apresente a frase como tradicionalmente atribuída a Arquimedes. A imagem é uma interpretação artística gerada por IA, não um retrato histórico. A ligação com gestão é uma metáfora, não uma lei física aplicada literalmente à receita.</p></aside>
+</section>
+
+<!-- ============ ALAVANCA 04 — O PRINCÍPIO DA ALAVANCA ============ -->
+<section class="slide" data-name="O Princípio da Alavanca">
+  <div class="pad">
+    <div class="kicker" data-r style="--i:0">A física</div>
+    <h1 class="title" data-r style="--i:1">O princípio da <em>alavanca</em></h1>
+    <svg class="alv-lever" data-r="fade" style="--i:2" viewBox="0 0 1000 380" role="img" aria-label="Alavanca: força no braço longo, ponto de apoio perto da carga, resultado ampliado">
+      <defs><linearGradient id="alvGold4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#efdca3"/><stop offset=".52" stop-color="#c79f4f"/><stop offset="1" stop-color="#9c7a35"/></linearGradient></defs>
+      <line x1="660" y1="330" x2="860" y2="330" stroke="rgba(255,255,255,.14)" stroke-width="2"/>
+      <polygon points="760,252 712,330 808,330" fill="url(#alvGold4)"/>
+      <g class="beam">
+        <rect x="50" y="244" width="910" height="12" rx="6" fill="url(#alvGold4)"/>
+        <line x1="110" y1="112" x2="110" y2="218" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+        <polygon points="94,212 126,212 110,240" fill="#fff"/>
+        <circle cx="905" cy="210" r="34" fill="#3b4049" stroke="rgba(255,255,255,.2)" stroke-width="1.5"/>
+        <line x1="905" y1="160" x2="905" y2="82" stroke="#c79f4f" stroke-width="7" stroke-linecap="round"/>
+        <polygon points="889,86 921,86 905,58" fill="#efdca3"/>
+      </g>
+      <text class="lab" x="110" y="88" text-anchor="middle">FORÇA</text>
+      <text class="lab g" x="905" y="36" text-anchor="middle">RESULTADO</text>
+      <text class="lab" x="760" y="366" text-anchor="middle">PONTO DE APOIO</text>
+    </svg>
+    <div class="alv-cap" data-r style="--i:3">Uma pequena força, <b>no lugar certo</b>, pode produzir um grande efeito.</div>
+  </div>
+  <aside class="notes"><p>Tempo sugerido: 3 min.</p><p>Explique força, fulcro e carga. Um braço de esforço maior pode ampliar a força na carga em troca de maior deslocamento da entrada. Não há criação de energia. O diagrama é esquemático.</p></aside>
+</section>
+
+<!-- ============ ALAVANCA 05 — NA EMPRESA ============ -->
+<section class="slide" data-name="Alavanca na Empresa">
+  <div class="pad">
+    <div class="kicker" data-r style="--i:0">Na empresa</div>
+    <h1 class="title" data-r style="--i:1">E se aplicássemos isso <em>a uma empresa?</em></h1>
+    <svg class="alv-lever" data-r="fade" style="--i:2" viewBox="0 0 1000 380" role="img" aria-label="Força (capital, pessoas, tempo, energia) na alavanca, sobre o ponto de apoio, gera resultado multiplicado">
+      <defs><linearGradient id="alvGold5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#efdca3"/><stop offset=".52" stop-color="#c79f4f"/><stop offset="1" stop-color="#9c7a35"/></linearGradient></defs>
+      <line x1="660" y1="330" x2="860" y2="330" stroke="rgba(255,255,255,.14)" stroke-width="2"/>
+      <polygon points="760,252 712,330 808,330" fill="url(#alvGold5)"/>
+      <g class="beam">
+        <rect x="50" y="244" width="910" height="12" rx="6" fill="url(#alvGold5)"/>
+        <line x1="110" y1="124" x2="110" y2="218" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+        <polygon points="94,212 126,212 110,240" fill="#fff"/>
+        <circle cx="905" cy="210" r="34" fill="#3b4049" stroke="rgba(255,255,255,.2)" stroke-width="1.5"/>
+        <line x1="905" y1="160" x2="905" y2="92" stroke="#c79f4f" stroke-width="7" stroke-linecap="round"/>
+        <polygon points="889,96 921,96 905,68" fill="#efdca3"/>
+      </g>
+      <text class="lab" x="110" y="38" text-anchor="middle">FORÇA</text>
+      <text class="sm" x="110" y="66" text-anchor="middle">Capital · Pessoas</text>
+      <text class="sm" x="110" y="90" text-anchor="middle">Tempo · Energia</text>
+      <text class="lab" x="430" y="200" text-anchor="middle">ALAVANCA</text>
+      <text class="lab g" x="905" y="22" text-anchor="middle">RESULTADO</text>
+      <text class="lab g" x="905" y="46" text-anchor="middle">MULTIPLICADO</text>
+      <text class="lab g" x="760" y="366" text-anchor="middle">PONTO DE APOIO</text>
+    </svg>
+    <div class="alv-cap" data-r style="--i:3">Onde sua empresa já faz <b>força demais?</b></div>
+  </div>
+  <aside class="notes"><p>Tempo sugerido: 3 min.</p><p>Peça à plateia exemplos de capital, pessoas, tempo e energia já disponíveis. O método busca fazer esses recursos produzirem mais efeito. Ponto de apoio representa a restrição prioritária nesta metáfora.</p><p>Pergunte: Qual desses recursos sua empresa já tem, mas ainda não consegue aproveitar bem? Ouça uma resposta e conecte ao ponto de apoio.</p></aside>
+</section>
+
+<!-- ============ ALAVANCA 06 — O PONTO DE APOIO ============ -->
+<section class="slide alv-say" data-name="O Ponto de Apoio">
+  <div class="pad">
+    <div class="kicker" data-r style="--i:0">O ponto de apoio</div>
+    <div class="statement" data-r style="--i:1">É o <span class="g">gargalo</span> que mais limita o crescimento da empresa.</div>
+    <div class="alv-q" data-r style="--i:3">Você sabe <b>qual é o seu hoje?</b></div>
+  </div>
+  <aside class="notes"><p>Tempo sugerido: 3 min.</p><p>Diferencie sintoma e gargalo. Poucas vendas podem vir de demanda inadequada, baixa conversão ou falta de capacidade. Pergunte: se uma coisa melhorasse agora, qual liberaria mais crescimento? A equivalência é a linguagem do Método ALAVANCA.</p><p>Dê alguns segundos de silêncio. Pergunte: Você sabe qual é o gargalo de hoje ou está repetindo a resposta do ano passado? Convide cada pessoa a anotar uma hipótese, sem tratar a hipótese como diagnóstico.</p></aside>
+</section>
+
+<!-- ============ ALAVANCA 07 — "PRECISAMOS DE MAIS LEADS" ============ -->
+<section class="slide" data-name="Precisamos de Mais Leads">
+  <div class="pad">
+    <div class="kicker" data-r style="--i:0">Diagnóstico</div>
+    <h1 class="title" data-r style="--i:1">“Precisamos de <em>mais leads</em>.”</h1>
+    <div class="alv-body">
+    <div class="alv-flow">
+      <div class="n" data-r="scale" style="--i:2"><b>1.000</b><span>leads</span></div>
+      <div class="ar" data-r style="--i:3">→<small>10%</small></div>
+      <div class="n" data-r="scale" style="--i:3"><b>100</b><span>oportunidades</span></div>
+      <div class="ar" data-r style="--i:4">→<small>10%</small></div>
+      <div class="n g" data-r="scale" style="--i:4"><b>10</b><span>vendas</span></div>
+    </div>
+    <div class="alv-pair">
+      <div class="c no" data-r="left" style="--i:5"><div class="t">A reação</div><div class="b">Dobrar para 2.000 leads</div></div>
+      <div class="c yes" data-r="right" style="--i:6"><div class="t">O gargalo deste caso</div><div class="b">Conversão</div></div>
+    </div>
+</div>
+  </div>
+  <div class="alv-foot">Exemplo ilustrativo</div>
+  <aside class="notes"><p>Tempo sugerido: 4 min.</p><p>Exemplo hipotético. 1.000 leads geram 100 oportunidades e 10 vendas: conversão final de 1%. Dobrar leads, com taxas constantes, geraria 20 vendas. Melhorar fechamento de 10% para 20% também geraria 20 vendas, com os mesmos 1.000 leads. Os dados isolados não provam o gargalo: neste cenário, o diagnóstico confirmou conversão como prioridade. Discuta quais evidências seriam necessárias.</p><p>Depois do exemplo, pergunte: Na sua empresa, qual pedido de mais investimento pode estar escondendo um problema de processo? Volte à situação escolhida na abertura.</p></aside>
+</section>
+
+<!-- ============ ALAVANCA 08 — MAIS FORÇA ≠ MAIS RESULTADO ============ -->
+<section class="slide" data-name="Mais Força ≠ Mais Resultado">
+  <div class="pad">
+    <div class="kicker" data-r style="--i:0">O custo</div>
+    <h1 class="title" data-r style="--i:1">Mais força ≠ <em>mais resultado</em></h1>
+    <div class="alv-body">
+    <div class="alv-leak">
+      <div class="box" data-r="scale" style="--i:2"><b>R$ 100 mil</b><span>em tráfego</span></div>
+      <div class="ar" data-r style="--i:3">→</div>
+      <div class="box bad" data-r="scale" style="--i:3"><b>Processo<br>comercial ruim</b></div>
+      <div class="ar" data-r style="--i:4">→</div>
+      <div class="out" data-r="scale" style="--i:4">$</div>
+    </div>
+    <div class="alv-q" data-r style="--i:5">Quanto custa <b>continuar alimentando</b> esse gargalo?</div>
+</div>
+  </div>
+  <div class="alv-foot">Cenário ilustrativo</div>
+  <aside class="notes"><p>Tempo sugerido: 3 min.</p><p>O investimento é ilustrativo. R$ 100 mil em tráfego alimentam um processo com demora de resposta, qualificação falha e acompanhamento irregular. Não atribua perda financeira exata sem dados. Investir mais pode aumentar vendas, mas não corrige a ineficiência por si só.</p><p>Pergunte sobre custos além de dinheiro: tempo, desgaste do time e oportunidades que não avançam. Não estime perdas do público. Deixe que cada pessoa reconheça o custo da própria situação.</p></aside>
+</section>
+
+<!-- ============ ALAVANCA 09 — ONDE APLICAR A FORÇA ============ -->
+<section class="slide alv-say" data-name="Onde Aplicar a Força">
+  <div class="pad">
+    <div class="pre" data-r style="--i:0"><s>Como fazer mais?</s></div>
+    <div class="statement" data-r style="--i:2">Onde aplicar nossa força para produzir <span class="g">maior impacto?</span></div>
+  </div>
+  <aside class="notes"><p>Tempo sugerido: 3 min.</p><p>Dê 30 segundos de reflexão. Convide dois participantes a reformular uma pergunta de crescimento da própria empresa. Troque quantidade de iniciativas por hipótese de impacto e evidência.</p><p>Peça que cada participante escreva sua resposta em uma frase. Fala sugerida: Se ainda não está claro onde agir, essa é uma boa pergunta para começar a investigar.</p></aside>
+</section>
+
+<!-- ============ ALAVANCA 10 — OS SETE ELEMENTOS ============ -->
+<section class="slide alv-acro" data-name="Os Sete Elementos">
+  <div class="pad"><div class="row">
+    <div class="col">
+      <div class="kicker" data-r style="--i:0">O método</div>
+      <h1 class="title" data-r style="--i:1">Os sete elementos <em>ALAVANCA</em></h1>
+      <div class="sub" data-r style="--i:2" style2="margin-top:20px">Um mapa para olhar a empresa. A ordem das letras não define a prioridade.</div>
+    </div>
+    <ul class="alv-list">
+      <li data-r="right" style="--i:2"><span class="l">A</span><span class="w">Aquisição</span></li>
+      <li data-r="right" style="--i:3"><span class="l">L</span><span class="w">Linha de Vendas</span></li>
+      <li data-r="right" style="--i:4"><span class="l">A</span><span class="w">Ativação</span></li>
+      <li data-r="right" style="--i:5"><span class="l">V</span><span class="w">Valorização</span></li>
+      <li data-r="right" style="--i:6"><span class="l">N</span><span class="w">Nível de Performance</span></li>
+      <li data-r="right" style="--i:7"><span class="l">C</span><span class="w">Cultura de Pertencimento</span></li>
+      <li data-r="right" style="--i:8"><span class="l">A</span><span class="w">Alinhamento</span></li>
+    </ul>
+  </div></div>
+  <aside class="notes"><p>Tempo sugerido: 4 min.</p><p>Apresente os sete nomes conforme o método fornecido. Explique brevemente cada elemento, sem escolher prioridade pela ordem das letras. O diagnóstico determina o foco. Os sete elementos não constituem uma sequência obrigatória.</p><p>Apresente os elementos como um mapa para olhar a empresa. Evite transformar este momento em sete aulas. Convide o público a acompanhar qual frente mais se conecta à situação que escolheu na abertura.</p></aside>
+</section>
+
+<!-- ============ ALAVANCA 11 — QUAL ALAVANCA ============ -->
+<section class="slide" data-name="Qual Alavanca">
+  <div class="pad">
+    <div class="kicker" data-r style="--i:0">Efeitos</div>
+    <h1 class="title" data-r style="--i:1">Qual dessas alavancas sua empresa <em>precisa hoje?</em></h1>
+    <div class="alv-body">
+    <div class="alv-map" data-r style="--i:2">
+      <div class="e">Aquisição</div><div class="a">→</div><div class="f">Demanda</div>
+      <div class="e">Linha de Vendas</div><div class="a">→</div><div class="f">Conversão</div>
+      <div class="e">Ativação</div><div class="a">→</div><div class="f">Retenção / expansão</div>
+      <div class="e">Valorização</div><div class="a">→</div><div class="f">Pessoas</div>
+      <div class="e">Nível de Performance</div><div class="a">→</div><div class="f">Execução</div>
+      <div class="e">Cultura de Pertencimento</div><div class="a">→</div><div class="f">Lealdade</div>
+      <div class="e">Alinhamento</div><div class="a">→</div><div class="f">Integração</div>
+    </div>
+</div>
+  </div>
+  <aside class="notes"><p>Tempo sugerido: 3 min.</p><p>Use as associações fornecidas no briefing. Aquisição amplia demanda. Linha de Vendas melhora conversão. Ativação trabalha retenção e expansão. Valorização desenvolve pessoas. Nível de Performance sustenta execução. Cultura fortalece lealdade. Alinhamento integra o sistema. São efeitos buscados, não resultados garantidos.</p><p>Pergunte: Qual efeito faz mais falta hoje? Mais demanda? Mais conversão? Mais retenção? Lembre que desejar um efeito não comprova qual é a restrição.</p></aside>
+</section>
+
+<!-- ============ ALAVANCA 12 — ARQUIMEDES + TOC + ALAVANCA ============ -->
+<section class="slide" data-name="Arquimedes + TOC + ALAVANCA">
+  <div class="pad">
+    <div class="kicker" data-r style="--i:0">Síntese</div>
+    <h1 class="title" data-r style="--i:1">Arquimedes + Teoria das Restrições + <em>ALAVANCA</em></h1>
+    <div class="alv-body">
+    <div class="alv-trio">
+      <div class="c" data-r="scale" style="--i:2"><div class="t">Arquimedes</div><div class="b">Ponto de apoio</div></div>
+      <div class="ar" data-r style="--i:3">→</div>
+      <div class="c" data-r="scale" style="--i:3"><div class="t">Teoria das Restrições</div><div class="b">Gargalo</div></div>
+      <div class="ar" data-r style="--i:4">→</div>
+      <div class="c g" data-r="scale" style="--i:4"><div class="t">ALAVANCA</div><div class="b">Alavanca prioritária</div></div>
+    </div>
+</div>
+  </div>
+  <aside class="notes"><p>Tempo sugerido: 3 min.</p><p>Arquimedes fornece a metáfora mecânica. A Teoria das Restrições orienta o foco no fator que limita o sistema. O Método ALAVANCA organiza as frentes de intervenção. A conexão é uma síntese conceitual desta apresentação. Fonte para TOC: https://www.tocico.org/ e https://www.tocinstitute.org/five-focusing-steps.html</p></aside>
+</section>
+
+<!-- ============ ALAVANCA 13 — NÃO É CHECKLIST ============ -->
+<section class="slide alv-say" data-name="Não É um Checklist">
+  <div class="pad">
+    <div class="pre" data-r style="--i:0">ALAVANCA não é um checklist.</div>
+    <div class="statement" data-r style="--i:2">É um sistema para decidir <span class="g">o que fazer primeiro.</span></div>
+    <div class="alv-q" data-r style="--i:3">Na sua empresa, <b>o que precisa vir primeiro?</b></div>
+  </div>
+  <aside class="notes"><p>Tempo sugerido: 2 min.</p><p>A avaliação pode abranger as sete frentes. A execução precisa de prioridade. Retome o caso: a Linha de Vendas foi escolhida por evidência de perda na conversão. Outras frentes continuam necessárias, mas devem apoiar a prioridade.</p><p>Fala sugerida: Reconhecer os nomes é um começo. A decisão mais importante é escolher o que vem primeiro na sua empresa e por quê. Peça que cada pessoa registre uma prioridade provisória e a evidência que falta para confirmá-la.</p></aside>
+</section>
+
+<!-- ============ ALAVANCA 14 — O CICLO DE ALAVANCAGEM ============ -->
+<section class="slide" data-name="O Ciclo de Alavancagem">
+  <div class="pad">
+    <div class="kicker" data-r style="--i:0">Na rotina</div>
+    <h1 class="title" data-r style="--i:1">O ciclo de <em>alavancagem</em></h1>
+    <div class="alv-body">
+    <div class="alv-cycle">
+      <div class="st" data-r="scale" style="--i:2"><small>01</small><b>Diagnóstico</b></div>
+      <div class="ar" data-r style="--i:2">→</div>
+      <div class="st" data-r="scale" style="--i:3"><small>02</small><b>Ponto de Apoio</b></div>
+      <div class="ar" data-r style="--i:3">→</div>
+      <div class="st g" data-r="scale" style="--i:4"><small>03</small><b>Alavanca Prioritária</b></div>
+
+      <div class="ar" data-r style="--i:8">↑</div><div></div><div></div><div></div>
+      <div class="ar" data-r style="--i:4">↓</div>
+
+      <div class="st" data-r="scale" style="--i:7"><small>06</small><b>Novo Gargalo</b></div>
+      <div class="ar" data-r style="--i:7">←</div>
+      <div class="st" data-r="scale" style="--i:6"><small>05</small><b>Multiplicação</b></div>
+      <div class="ar" data-r style="--i:6">←</div>
+      <div class="st" data-r="scale" style="--i:5"><small>04</small><b>Ação</b></div>
+    </div>
+    <div class="alv-q" data-r style="--i:9">Qual é o <b>primeiro dado</b> que você precisa olhar?</div>
+</div>
+  </div>
+  <aside class="notes"><p>Tempo sugerido: 3 min.</p><p>Percorra o ciclo com o caso: diagnóstico de perdas, ponto de apoio na conversão, Linha de Vendas como alavanca prioritária, ação sobre resposta e acompanhamento, medição do resultado e novo diagnóstico. Multiplicação é um objetivo a validar. Se não houver ganho, revise a hipótese. O ciclo é do Método ALAVANCA e não uma reprodução dos cinco passos da TOC.</p><p>Fala sugerida: Esse ciclo só começa a mudar o resultado quando entra na rotina. Pergunte qual dado cada participante precisa reunir para iniciar o diagnóstico.</p></aside>
+</section>
+
+<!-- ============ ALAVANCA 15 — RESULTADO = FORÇA × ALAVANCAGEM ============ -->
+<section class="slide alv-eq" data-name="Resultado = Força × Alavancagem">
+  <div class="pad">
+    <div class="kicker" data-r style="--i:0">A equação</div>
+    <h1 class="title" data-r style="--i:1">Resultado = Força × <em>Alavancagem</em></h1>
+    <div class="alv-body">
+    <div class="row">
+      <div class="alv-cro" data-r="left" style="--i:2"><b>CRO</b><span>Liderança de receita</span></div>
+      <div class="alv-kpis">
+        <div data-r="scale" style="--i:3">Conversão</div>
+        <div data-r="scale" style="--i:4">Ticket médio</div>
+        <div data-r="scale" style="--i:5">Retenção</div>
+        <div data-r="scale" style="--i:6">Expansão</div>
+      </div>
+    </div>
+    <div class="alv-rev" data-r style="--i:7">
+      <div class="t">Receita de novas vendas</div>
+      <div class="f">Oportunidades <i>×</i> Conversão <i>×</i> Ticket médio</div>
+    </div>
+</div>
+  </div>
+  <div class="alv-foot">Equação conceitual de alavancagem</div>
+  <aside class="notes"><p>Tempo sugerido: 2 min.</p><p>Equação conceitual, não identidade contábil nem promessa de retorno. CRO aqui significa liderança de receita (Chief Revenue Officer), conectando aquisição, vendas e expansão. Se o público usa CRO como otimização da taxa de conversão, explicite a diferença. Receita de novas vendas pode ser decomposta em oportunidades vezes taxa de fechamento vezes ticket médio no mesmo período. A receita total também depende da base, retenção e expansão. Acompanhe CAC e margem como contrapesos.</p><p>Conecte as métricas à situação da abertura. Pergunte qual indicador mostraria que a ação escolhida funcionou. Preserve a distinção entre a equação conceitual e a decomposição da receita.</p></aside>
+</section>
+
+<!-- ============ ALAVANCA 16 — MÉTODO ALAVANCA ============ -->
+<section class="slide chapter alv-close" data-name="Método ALAVANCA">
+  <div class="glow"></div>
+  <div class="pad">
+    <div class="kicker" data-r style="--i:0">O método</div>
+    <h1 data-r style="--i:1">Método <span class="g">ALAVANCA</span></h1>
+    <ul class="alv-list two">
+      <li data-r style="--i:2"><span class="l">A</span><span class="w">Aquisição</span></li>
+      <li data-r style="--i:2"><span class="l">L</span><span class="w">Linha de Vendas</span></li>
+      <li data-r style="--i:3"><span class="l">A</span><span class="w">Ativação</span></li>
+      <li data-r style="--i:3"><span class="l">V</span><span class="w">Valorização</span></li>
+      <li data-r style="--i:4"><span class="l">N</span><span class="w">Nível de Performance</span></li>
+      <li data-r style="--i:4"><span class="l">C</span><span class="w">Cultura de Pertencimento</span></li>
+      <li data-r style="--i:5"><span class="l">A</span><span class="w">Alinhamento</span></li>
+    </ul>
+    <div class="alv-q" data-r style="--i:6">Onde está o <em>ponto de apoio</em> da sua empresa?</div>
+  </div>
+  <aside class="notes"><p>Tempo sugerido: 2 min.</p><p>Retome os sete elementos como síntese. Peça que cada pessoa escolha qual frente precisa investigar primeiro e qual evidência sustentaria essa escolha. Feche o bloco com a pergunta: qual é o verdadeiro gargalo da sua empresa?</p><p>Fala sugerida: No início, eu perguntei por que algumas empresas fazem cada vez mais força e continuam no mesmo lugar. Agora leve uma pergunta com você: onde está o ponto de apoio da sua empresa? Faça uma pausa.</p><p>Transição: agora vamos às ferramentas que movem essas alavancas na prática — o time de vendas, o CRM e a IA.</p></aside>
 </section>
 
 <!-- ============ SLIDES 12-14 — POSIÇÕES TIME DE VENDAS ============ -->
@@ -947,6 +1376,11 @@ section[data-name="Pipeline de CRM"] .title{font-size:36px;line-height:1.04;lett
   </div>
 </section>
 
+<!-- ===================================================================
+     ENCERRAMENTO — MÉTODO ALAVANCA (16 slides)
+     Fonte: ALAVANCA_Encerramento_Acronimo.pptx · notas em <aside class="notes">
+     =================================================================== -->
+
 <!-- ============ SLIDE FINAL — COMERCIAL 220 ============ -->
 <section class="slide final-comercial220" data-name="Comercial 220">
   <img src="assets/slide-final-comercial220.jpg" alt="Comercial 220">
@@ -1007,6 +1441,7 @@ function go(n){
   dots.forEach((d,i)=>d.classList.toggle('on',i===cur));
   animCounters(sl);
   if(sl.dataset.demo) initChat(); else clearDemo();
+  updatePresenter();
 }
 function next(){
   const sl=slides[cur];
@@ -1077,12 +1512,45 @@ function revealNextChat(){
   }
   if(chatPos>=CHAT.length){const hint=document.getElementById('chathint'); if(hint) hint.classList.add('done');}
 }
-addEventListener('keydown',e=>{
+/* ===== janela do apresentador (tecla P): notas do slide atual + próximo + cronômetro ===== */
+let presenter=null;
+function openPresenter(){
+  if(presenter&&!presenter.closed){presenter.focus();return;}
+  presenter=window.open('','apresentador','width=760,height=600');
+  if(!presenter)return; // pop-up bloqueado
+  const d=presenter.document;
+  d.open();
+  d.write('<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><title>Apresentador · Notas</title><style>'
+    +'body{margin:0;padding:26px 30px;background:#050b14;color:#eaeef6;font:17px/1.55 Inter,system-ui,sans-serif}'
+    +'header{display:flex;justify-content:space-between;color:#93a1bb;font-size:14px;letter-spacing:.08em}'
+    +'#t{color:#c79f4f;font-weight:700;font-variant-numeric:tabular-nums}'
+    +'h1{margin:10px 0 18px;font-size:28px;color:#fff}'
+    +'#notes p{margin:0 0 14px}#notes p:first-child{color:#c79f4f;font-weight:700}'
+    +'.empty{color:#65728e}footer{margin-top:22px;padding-top:14px;border-top:1px solid rgba(255,255,255,.1);color:#93a1bb;font-size:14px}'
+    +'</style></head><body><header><b id="n"></b><span id="t">00:00</span></header><h1 id="nm"></h1><div id="notes"></div><footer id="nx"></footer></body></html>');
+  d.close();
+  presenter.addEventListener('keydown',onKey);
+  const t0=Date.now();
+  presenter.setInterval(()=>{const s=Math.floor((Date.now()-t0)/1000);
+    d.getElementById('t').textContent=String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');},1000);
+  updatePresenter();
+}
+function updatePresenter(){
+  if(!presenter||presenter.closed)return;
+  const d=presenter.document,sl=slides[cur],nx=slides[cur+1],n=sl.querySelector('aside.notes');
+  d.getElementById('n').textContent='SLIDE '+(cur+1)+' / '+slides.length;
+  d.getElementById('nm').textContent=sl.dataset.name||'';
+  d.getElementById('notes').innerHTML=n?n.innerHTML:'<p class="empty">Sem notas neste slide.</p>';
+  d.getElementById('nx').textContent=nx?'Próximo: '+nx.dataset.name:'Último slide';
+}
+function onKey(e){
   if(['ArrowRight','ArrowDown',' ','PageDown'].includes(e.key)){e.preventDefault();next()}
   else if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key)){e.preventDefault();prev()}
   else if(e.key==='Home')go(0);else if(e.key==='End')go(slides.length-1);
   else if(e.key==='f'||e.key==='F'){if(!document.fullscreenElement)document.documentElement.requestFullscreen();else document.exitFullscreen()}
-});
+  else if(e.key==='p'||e.key==='P')openPresenter();
+}
+addEventListener('keydown',onKey);
 document.getElementById('navL').onclick=prev;
 document.getElementById('navR').onclick=next;
 go(0);
